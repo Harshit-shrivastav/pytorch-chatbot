@@ -1,0 +1,45 @@
+[project]
+name = "pytorch-chatbot"
+version = "1.0.0"
+description = "Sequence-to-sequence chatbot (LSTM with attention) built with PyTorch and NLTK."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Harshit Shrivastav" }]
+keywords = ["pytorch", "chatbot", "nlp", "seq2seq", "attention", "deep-learning"]
+dependencies = [
+    "torch>=2.2",
+    "nltk>=3.8",
+    "numpy>=1.26",
+]
+
+[project.urls]
+Homepage = "https://me.h-s.site"
+Repository = "https://github.com/Harshit-shrivastav/pytorch-chatbot"
+
+# Use the smaller CPU-only wheels of PyTorch: this project trains in seconds
+# on a laptop, so the multi-GB CUDA builds are not needed.
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+
+[dependency-groups]
+dev = ["ruff>=0.6", "pytest>=8.0"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["chatbot"]

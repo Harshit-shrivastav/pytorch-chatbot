@@ -2,7 +2,6 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.x-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
-[![uv](https://img.shields.io/badge/managed%20with-uv-DE5FE9?logo=uv&logoColor=white)](https://docs.astral.sh/uv/)
 [![License](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
 
 A chatbot written in PyTorch. It is a sequence to sequence model: an LSTM
@@ -15,9 +14,6 @@ on CPU in a couple of minutes and the whole project is managed with `uv`.
 ```text
 you : hi
 PyBot: hello ! what can i help you with ?
-
-you : where does harshit study
-PyBot: iit madras , he is doing a bs in data science and applications .
 
 you : tell me a joke
 PyBot: why do programmers prefer dark mode ? because light attracts bugs !
@@ -155,10 +151,12 @@ The knobs live in [`chatbot/config.py`](chatbot/config.py):
 Harshit Shrivastav, Delhi.
 
 - Portfolio: [me.h-s.site](https://me.h-s.site)
-- GitHub: [github.com/Harshit-shrivastav](https://github.com/Harshit-shrivastav)
-- LinkedIn: [linkedin.com/in/harshits-shrivastav](https://linkedin.com/in/harshits-shrivastav)
+- GitHub: [github.com/Harshit-shrivastav](https://github.com/Harshit-shrivastav)(https://linkedin.com/in/harshits-shrivastav)
 - YouTube: [youtube.com/@pyrogrammers](https://youtube.com/@pyrogrammers)
 - Kaggle: [kaggle.com/theharshitshrivastav](https://www.kaggle.com/theharshitshrivastav)
+  
+---
+All comments and docstrings in code are written by humans, not by AI.
 
 ## License
 

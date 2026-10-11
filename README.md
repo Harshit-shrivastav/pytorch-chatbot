@@ -156,7 +156,8 @@ Harshit Shrivastav, Delhi.
 - Kaggle: [kaggle.com/theharshitshrivastav](https://www.kaggle.com/theharshitshrivastav)
   
 ---
-All comments and docstrings in code are written by humans, not by AI.
+All comments and docstrings in code are written by me, not by AI.
+Readme file is rephrased by AI.
 
 ## License
 
